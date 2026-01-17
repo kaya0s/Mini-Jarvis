@@ -4,11 +4,11 @@ __pycache__/
 *$py.class
 
 
-# PyInstaller
+# PyInstaller / Build
 build/
 dist/
 *.spec
-
+*.zip
 
 # IDEs
 .vscode/
