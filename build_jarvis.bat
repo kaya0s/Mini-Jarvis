@@ -36,14 +36,15 @@ echo [+] Building JARVIS executable...
 :: --clean: Clean PyInstaller cache
 :: --name: Name of the output file
 :: Hidden imports help ensure pyttsx3 drivers are found
-pyinstaller --onefile --clean --name "JARVIS" ^
+pyinstaller --onefile --noconsole --clean --name "JARVIS" --icon "icon.ico" ^
     --add-data "jarvis.mp3;." ^
+    --add-data "icon.ico;." ^
     --add-binary "flac.exe;." ^
     --add-binary "libFLAC.dll;." ^
     --add-binary "libFLAC++.dll;." ^
     --hidden-import=pyttsx3.drivers ^
     --hidden-import=pyttsx3.drivers.sapi5 ^
-    jarvis.py
+    main.py
 
 if %errorlevel% equ 0 (
     echo.

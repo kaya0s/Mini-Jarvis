@@ -11,21 +11,6 @@ Currently, this project is designed to automatically initialize the workspace fo
 
 ## 🚀 Quick Start
 
-1. **Install Dependencies**:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-2. **Run JARVIS**:
-   ```bash
-   python jarvis.py
-   ```
-
-3. **Wake Command**:
-   Say **"Wake up"** to automatically open and arrange VS Code, Spotify, and ChatGPT.
-
----
-
 ## 📦 Standalone App
 
 <table>
